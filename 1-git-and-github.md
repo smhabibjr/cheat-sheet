@@ -108,64 +108,64 @@ git checkout -b "branch name" create a new branch and switch into it.
 
 ## Deploy on github.
 
-	````sh
-    git remote add origin https://github.com/username/repositoryname.git
-    ````
-	Is use to connect remote repository to our local repository.
+````sh
+git remote add origin https://github.com/username/repositoryname.git
+````
+Is use to connect remote repository to our local repository.
 
-	````sh
-    git remote
-    ````
-	return the remote.
+````sh
+git remote
+````
+return the remote.
 
-	````sh
-    git remote -v
-    ````
-	return the urls of remote where we fetch or push.
+````sh
+git remote -v
+````
+return the urls of remote where we fetch or push.
 
-	````sh
-    git remote set-url orgin https://github.com/username/repositoryname.git
-    ````
-	change/update your remote url.
+````sh
+git remote set-url orgin https://github.com/username/repositoryname.git
+````
+change/update your remote url.
 
-	````sh
-    git push -u orgin "branch name"
-    ````
-	we are telling to github where we pushing next time we only need to write ($git push)
-	it also push our code to the same place but first time we must tell it.	
+````sh
+git push -u orgin "branch name"
+````
+we are telling to github where we pushing next time we only need to write ($git push)
+it also push our code to the same place but first time we must tell it.	
 
-	````sh
-    git push origin "branch name"
-    ````
-	git push is use to push our code/files to our remote(origin) and on which branch it push.
+````sh
+git push origin "branch name"
+````
+git push is use to push our code/files to our remote(origin) and on which branch it push.
 	
 ## Creating .ssh key and add into gihub account.
-	### Genrating a new ssh key.
-		
-        ````sh
-        ssh-keygen -t ed25519 -C "your_email@example.com"
-        ````
+### Genrating a new ssh key.
 
-		paraphase (just click enter)
+````sh
+ssh-keygen -t ed25519 -C "your_email@example.com"
+````
 
-		````sh
-        eval "$(ssh-agent -s)"
-        ````
-		agent key process id.
-	
-    ### Adding ssh key to github.
+paraphase (just click enter)
 
-		````sh
-        ssh-add ~/.ssh/id_ed25519
-        ````
+````sh
+eval "$(ssh-agent -s)"
+````
+agent key process id.
 
-		````sh
-        clip < ~/.ssh/id_ed25519.pub
-        ````
-		Copies the contents of the id_ed25519.pub file to your clipboard.
+### Adding ssh key to github.
 
-		Then go to the github settings/SSH and GPG keys/(click on)new ssh key
-		in title type your title and in key paste your key.
+````sh
+ssh-add ~/.ssh/id_ed25519
+````
+
+````sh
+clip < ~/.ssh/id_ed25519.pub
+````
+Copies the contents of the id_ed25519.pub file to your clipboard.
+
+Then go to the github settings/SSH and GPG keys/(click on)new ssh key
+in title type your title and in key paste your key.
 
 ## .gitignore
 .gitignore is a file that can be only creating using ($touch .gitignore) command , In git
