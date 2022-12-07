@@ -1,4 +1,4 @@
-add Dockerfile to your project directory
+Add Dockerfile to your project directory
 
 ````docker
 FROM ruby:3.1
