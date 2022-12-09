@@ -54,7 +54,7 @@ docker rm -f container_id
 ````
 To remove all the docker containers at once.
 ````sh
-docker rm $(docker ps -a -q)
+docker rm $(docker ps -aq)
 ````
 To remove specific docker image 
 ````sh
@@ -63,5 +63,5 @@ docker rmi -f image_id
 
 To remove all the docker images at once.
 ````sh
-docker rmi $(docker images -a -q)
+docker rmi $(docker images -aq)
 ````
