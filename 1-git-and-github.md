@@ -167,6 +167,11 @@ Copies the contents of the id_ed25519.pub file to your clipboard.
 Then go to the github settings/SSH and GPG keys/(click on)new ssh key
 in title type your title and in key paste your key.
 
+### Git Remote 
+````bsh
+git remote -v
+````
+
 ## .gitignore
 .gitignore is a file that can be only creating using ($touch .gitignore) command , In git
 ignore we write directly file name and git ignore it from monitoring it , /"file name" is use
