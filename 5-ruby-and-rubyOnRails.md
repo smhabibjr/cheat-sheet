@@ -1,3 +1,12 @@
+### head status
+````ruby
+ if params[:id].present?
+      head :ok
+    else
+      head :not_found
+    end
+````
+
 ## rails g
 
 ## Routes
