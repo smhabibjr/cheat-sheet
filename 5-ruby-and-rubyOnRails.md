@@ -4,6 +4,18 @@
       head :ok
     else
       head :not_found
+ end
+ 
+ // send json data from controller.
+    if error_msg.length > 0
+      # then render head not found
+      render :status => :not_found, :json => error_msg
+      asdfasdf = 1
+    else
+      success_msg
+      # otherwise send ok status
+      render json: success_msg
+      asdf = 1
     end
 ````
 
