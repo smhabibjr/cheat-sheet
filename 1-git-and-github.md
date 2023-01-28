@@ -61,6 +61,12 @@ git merg "branch name"
 ````sh
 git checkout -b "branch name"
 ````
+````
+git reset --soft HEAD^      //Will keep the modified changes in your working tree.
+````
+````
+git reset --hard HEAD^    //WILL THROW AWAY THE CHANGES YOU MADE !!!
+````
 ## Deploy on github.
 
 ````sh
