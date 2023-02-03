@@ -21,6 +21,10 @@
 
 ## rails g
 
+````ruby
+rails generate model User username:string password:string
+````
+
 ## Routes
 ````bsh
 rake routes | grep products
