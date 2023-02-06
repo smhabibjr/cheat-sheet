@@ -1,3 +1,10 @@
+Create new view in sql
+````
+CREATE VIEW view_mitarbeiter AS
+SELECT name, vorname, gebdatum, gehalt, bonus, (gehalt + ISNULL(bonus, 0)) as gesamt_einkommen
+FROM mitarbeiter;
+````
+
 1.1 Name , Vorname, Gehalt, Prämie aller Mitarbeiter
 ````
 SELECT
