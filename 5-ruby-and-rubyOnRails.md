@@ -1,3 +1,7 @@
+````rails
+rails generate scaffold Post name:string title:string content:text
+````
+
 ### head status
 ````ruby
  if params[:id].present?
