@@ -44,5 +44,7 @@ rake routes | grep products
    * Make sure that you specify the right path to Ruby installed in your computer
 
 ## rails app debagging
+``
 <% rise %>
+``
 
