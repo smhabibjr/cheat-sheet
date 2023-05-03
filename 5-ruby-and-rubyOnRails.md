@@ -42,3 +42,7 @@ rake routes | grep products
 2. From that cmd, run `gem install mysql2 --platform=ruby -- --with-mysql-dir=c:/your/path/to/Ruby27-x64/msys64/mingw64`
    
    * Make sure that you specify the right path to Ruby installed in your computer
+
+## rails app debagging
+<% rise %>
+
