@@ -51,7 +51,9 @@ rake routes | grep products
 ## Send more than one parameters to rails index action from php
 
 ``:5050/reportgenerator/?user_id=$user_id&branch_id=$hdl[id]``
+
 Routes like this 
+
 ``resources :reportgenerator, only: [:index, :create, :edit, :destroy]``
 
 and we can receive those parameters in our rails controller like this 
