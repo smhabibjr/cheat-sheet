@@ -48,3 +48,6 @@ rake routes | grep products
 <% rise %>
 ``
 
+## Send more than one parameters to rails index action from php
+
+``:5050/reportgenerator/?user_id=$user_id&branch_id=$hdl[id]``
