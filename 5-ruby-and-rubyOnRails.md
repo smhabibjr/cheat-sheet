@@ -51,3 +51,8 @@ rake routes | grep products
 ## Send more than one parameters to rails index action from php
 
 ``:5050/reportgenerator/?user_id=$user_id&branch_id=$hdl[id]``
+and we can receive those parameters in our rails controller like this 
+``  def index
+    branch_id = params[:branch_id]
+    user_id = params[:user_id]
+  end``
