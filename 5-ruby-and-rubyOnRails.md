@@ -11,13 +11,13 @@ rails generate model User username:string password:string
 ````ruby
 rails generate controller user index show edit update destroy
 ````
-````bsh
+````ruby
 rake routes | grep products
 ````
-````bsh
+````ruby
 rails db:migrate
 ````
-````bsh
+````ruby
 rails db:rollback
 ````
 
