@@ -52,7 +52,7 @@ rails db:rollback
    * Make sure that you specify the right path to Ruby installed in your computer
 
 ## rails app debagging
-``
+``ruby
 <% rise %>
 ``
 
@@ -66,7 +66,7 @@ Routes like this
 
 and we can receive those parameters in our rails controller like this 
 
-````
+````ruby
 def index
     branch_id = params[:branch_id]
     user_id = params[:user_id]
@@ -75,13 +75,13 @@ end
  
  ### Rails strong parameters
  
- ````
+ ````ruby
  def client_params
     params.require(:client).permit(:name, :email, :address)
   end
   ````
   ### form object errors in view
-  ````
+  ````ruby
    <% if form.object.errors.any? %>
     <div>
       <% form.object.errors.full_messages.each do |msg| %>
