@@ -64,3 +64,11 @@ def index
     user_id = params[:user_id]
 end
  ````
+ 
+ ### Rails strong parameters
+ 
+ ````
+ def client_params
+    params.require(:client).permit(:name, :email, :address)
+  end
+  ````
