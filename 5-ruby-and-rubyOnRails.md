@@ -1,6 +1,26 @@
-````rails
+### Rails g command
+````ruby
 rails generate scaffold Post name:string title:string content:text
 ````
+````ruby
+rails destroy scaffold Post
+````
+````ruby
+rails generate model User username:string password:string
+````
+````ruby
+rails generate controller user index show edit update destroy
+````
+````bsh
+rake routes | grep products
+````
+````bsh
+rails db:migrate
+````
+````bsh
+rails db:rollback
+````
+
 
 ### head status
 ````ruby
@@ -22,18 +42,6 @@ rails generate scaffold Post name:string title:string content:text
       asdf = 1
     end
 ````
-
-## rails g
-
-````ruby
-rails generate model User username:string password:string
-````
-
-## Routes
-````bsh
-rake routes | grep products
-````
-
 
 
 ## If gem does not install normaly Try using this way
@@ -71,4 +79,14 @@ end
  def client_params
     params.require(:client).permit(:name, :email, :address)
   end
+  ````
+  ### form object errors in view
+  ````
+   <% if form.object.errors.any? %>
+    <div>
+      <% form.object.errors.full_messages.each do |msg| %>
+        <div> <%= msg %> </div>
+      <% end %>
+    </div>
+  <% end %>
   ````
