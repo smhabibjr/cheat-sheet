@@ -52,9 +52,9 @@ rails db:rollback
    * Make sure that you specify the right path to Ruby installed in your computer
 
 ## rails app debagging
-``ruby
+````ruby
 <% rise %>
-``
+````
 
 ## Send more than one parameters to rails index action from php
 
