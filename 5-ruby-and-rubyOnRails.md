@@ -80,7 +80,7 @@ end
     params.require(:client).permit(:name, :email, :address)
   end
   ````
-  ### form object errors in view
+  ### Form object errors in view
   ````ruby
    <% if form.object.errors.any? %>
     <div>
