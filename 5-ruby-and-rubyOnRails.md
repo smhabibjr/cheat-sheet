@@ -20,6 +20,9 @@ rails db:migrate
 ````ruby
 rails db:rollback
 ````
+  ````ruby
+  localhost:3000/rails/info/routes
+  ````
 
 
 ### head status
@@ -90,3 +93,4 @@ end
     </div>
   <% end %>
   ````
+  
