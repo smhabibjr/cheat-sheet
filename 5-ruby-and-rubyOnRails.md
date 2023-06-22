@@ -51,8 +51,7 @@ rails db:rollback
 ````ruby
 rescue ActiveRecord::RecordNotFound
     redirect_to root_path
-
-    ````
+````
 
 ## If gem does not install normaly Try using this way
 1. Start  `cmd` terminal and run `ridk`
