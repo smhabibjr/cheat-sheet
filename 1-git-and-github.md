@@ -67,6 +67,13 @@ git reset --soft HEAD^      //Will keep the modified changes in your working tre
 ````
 git reset --hard HEAD^    //WILL THROW AWAY THE CHANGES YOU MADE !!!
 ````
+Delete all branches except master command
+To delete all branches in your Git repository except master, simply issue the following command:
+
+````
+git branch | grep -v "master" | xargs git branch -D
+````
+
 ## Deploy on github.
 
 ````sh
