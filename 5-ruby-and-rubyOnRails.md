@@ -23,6 +23,9 @@ rails db:rollback
   ````ruby
   localhost:3000/rails/info/routes
   ````
+````ruby
+del tmp\pids\server.pid
+````
 
 
 ### head status
