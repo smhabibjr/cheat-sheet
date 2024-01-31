@@ -3,6 +3,9 @@
 ```bash
 sudo systemctl status nginx
 ```
+```bash
+sudo /etc/init.d/nginx status
+```
 ## Stop nginx
 ```bash
 sudo systemctl stop nginx
