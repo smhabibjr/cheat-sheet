@@ -97,6 +97,10 @@ git push -u orgin "branch name"
 ````sh
 git push origin "branch name"
 ````
+
+```sh
+git push origin --all
+```
 	
 ## Creating .ssh key and add into gihub account.
 ### Genrating a new ssh key.
