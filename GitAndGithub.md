@@ -101,7 +101,24 @@ git push origin "branch name"
 ```sh
 git push origin --all
 ```
-	
+
+## git conflicts.
+Merge Request:
+
+In a GitLab merge request or pull, "Use yours" and "Use theirs" appear when resolving merge conflicts. Their meanings are as follows:
+
+"Use yours" → Keeps your changes (the changes from your branch).
+"Use theirs" → Uses the changes from the target branch (the branch you are merging into).
+For example, if you're merging feature-branch into main and there's a conflict:
+
+#### Merge Request: from feature-branch to main-branch
+
+Clicking "Use yours" keeps the conflicting lines from feature-branch.
+
+#### Pull from main-branch to feature-branch
+
+Clicking "Use theirs" keeps the conflicting lines from main.
+
 ## Creating .ssh key and add into gihub account.
 ### Genrating a new ssh key.
 
