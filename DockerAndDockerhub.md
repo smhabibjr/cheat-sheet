@@ -65,3 +65,15 @@ To remove all the docker images at once.
 ````sh
 docker rmi $(docker images -aq)
 ````
+
+To get some space 
+````sh
+docker system prune
+````
+To get container performace 
+````sh
+docker stats container_name_or_id
+````
+````sh
+docker inspect container_name_or_id
+````
